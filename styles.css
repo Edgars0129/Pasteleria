@@ -1,0 +1,294 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #FFF5EE;
+    color: #8B4B8B;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFB6C1;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #FFD1DC;
+    border-radius: 25px;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8B4B8B;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #8B4B8B;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #C71585;
+    font-size: 48px;
+    margin-top: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+button {
+    background-color: #FFB6C1;
+    border: none;
+    color: #8B4B8B;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.product-images {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.product-images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.description {
+    width: 45%;
+    text-align: left;
+    color: #8B4B8B;
+}
+
+/* Elementos decorativos */
+main::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFD1DC;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+main::after {
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: #FFB6C1;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product-item p {
+    margin-top: 10px;
+    color: #8B4B8B;
+    font-weight: 600;
+}
+
+/* Ajuste para la barra de navegación */
+header {
+    background-color: #B76E79;
+    padding: 15px 0;
+}
+
+nav ul {
+    background-color: #FFD1DC;
+    border-radius: 25px;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Elemento decorativo */
+body::after {
+    content: '';
+    position: fixed;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background-color: #FFD1DC;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+/* Estilos base (para móviles) */
+body {
+    font-size: 16px;
+}
+
+nav ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+.content {
+    flex-direction: column;
+}
+
+.product-images, .description {
+    width: 100%;
+}
+
+.product-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Tablets (768px y superior) */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+
+    .product-images, .description {
+        width: 48%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* PCs (1024px y superior) */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Ajustes adicionales para pantallas más grandes */
+@media screen and (min-width: 1440px) {
+    main {
+        max-width: 1200px;
+    }
+}
+
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #FFD1DC;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.mobile-menu.active {
+    left: 0;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.mobile-menu li {
+    margin-bottom: 15px;
+}
+
+.mobile-menu a {
+    color: #8B4B8B;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    nav:not(.mobile-menu) {
+        display: none;
+    }
+}
