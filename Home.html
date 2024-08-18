@@ -6,7 +6,7 @@
     <title>Aldenaire & Partners - Skincare Shop</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
-    <script src="funtions.js" defer></script>
+    <script src="functions.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
                 <li><a href="#account">Account</a></li>
             </ul>
         </nav>
-        <nav>
+        <nav class="desktop-menu">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#shop">Shop</a></li>
@@ -36,15 +36,31 @@
         <div class="hero">
             <h1>Aldenaire & Partners</h1>
             <h2>Skincare Shop</h2>
-            <button class="cta-button">Contactanos</button>
+            <button class="cta-button">Contáctanos</button>
         </div>
         <div class="content">
-            <div class="product-images">
-                <img src="./img/skincare1.jpg" alt="Skincare products">
-                <img src="./img/skincare2.jpg" alt="More skincare products">
+            <div class="product-grid">
+                <div class="product-item" data-product-id="1">
+                    <img src="./img/pan.jpg" alt="Producto 1">
+                    <p>Producto 1</p>
+                </div>
+                <div class="product-item" data-product-id="2">
+                    <img src="./img/pan.jpg" alt="Producto 2">
+                    <p>Producto 2</p>
+                </div>
+                <!-- Añade más productos según sea necesario -->
             </div>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod condimentum ligula, eu dignissim lorem mattis ultricies. Aenean a metus turpis.</p>
         </div>
     </main>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-product-image" src="" alt="Producto">
+            <h2 id="modal-product-name"></h2>
+            <p id="modal-product-description"></p>
+        </div>
+    </div>
 </body>
 </html>
