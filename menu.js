@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
             mobileMenu.classList.remove('active');
         }
-    });
+});
 
     // Funcionalidad del modal de producto
     productItems.forEach(item => {
