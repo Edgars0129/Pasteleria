@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #FFB6C1;
+    background-color: #B76E79;
     padding: 15px 0;
 }
 
@@ -40,82 +40,6 @@ main {
     text-align: center;
 }
 
-h1 {
-    color: #8B4B8B;
-    font-size: 24px;
-    margin-bottom: 0;
-}
-
-h2 {
-    color: #C71585;
-    font-size: 48px;
-    margin-top: 10px;
-    font-family: 'Pacifico', cursive;
-}
-
-button {
-    background-color: #FFB6C1;
-    border: none;
-    color: #8B4B8B;
-    padding: 10px 30px;
-    border-radius: 25px;
-    font-size: 18px;
-    cursor: pointer;
-    margin: 20px 0;
-    font-family: 'Pacifico', cursive;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.product-images {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-}
-
-.product-images img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.description {
-    width: 45%;
-    text-align: left;
-    color: #8B4B8B;
-}
-
-/* Elementos decorativos */
-main::before {
-    content: '';
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    width: 100px;
-    height: 100px;
-    background-color: #FFD1DC;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-main::after {
-    content: '';
-    position: absolute;
-    bottom: 100px;
-    right: 50px;
-    width: 150px;
-    height: 150px;
-    background-color: #FFB6C1;
-    border-radius: 50%;
-    z-index: -1;
-}
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -125,6 +49,7 @@ main::after {
 
 .product-item {
     text-align: center;
+    cursor: pointer;
 }
 
 .product-item img {
@@ -140,105 +65,82 @@ main::after {
     font-weight: 600;
 }
 
-/* Ajuste para la barra de navegación */
-header {
-    background-color: #B76E79;
-    padding: 15px 0;
-}
-
-nav ul {
-    background-color: #FFD1DC;
-    border-radius: 25px;
-    padding: 10px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Elemento decorativo */
-body::after {
-    content: '';
+/* Modal styles */
+.modal {
+    display: none;
     position: fixed;
-    bottom: -50px;
-    right: -50px;
-    width: 200px;
-    height: 200px;
-    background-color: #FFD1DC;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-
-/* Estilos base (para móviles) */
-body {
-    font-size: 16px;
-}
-
-nav ul {
-    flex-direction: column;
-    align-items: center;
-}
-
-nav ul li {
-    margin: 10px 0;
-}
-
-.content {
-    flex-direction: column;
-}
-
-.product-images, .description {
+    z-index: 1000;
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
 }
 
-.product-grid {
-    grid-template-columns: repeat(1, 1fr);
+.modal-content {
+    background-color: #FFF5EE;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    position: relative;
 }
 
-/* Tablets (768px y superior) */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 18px;
-    }
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-    nav ul {
-        flex-direction: row;
-    }
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    nav ul li {
-        margin: 0 10px;
-    }
+#modal-product-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
 
-    .content {
-        flex-direction: row;
-    }
+#modal-product-name {
+    color: #8B4B8B;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
-    .product-images, .description {
-        width: 48%;
-    }
+#modal-product-description {
+    color: #8B4B8B;
+    font-size: 16px;
+    line-height: 1.5;
+}
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .modal-content {
+        width: 90%;
+        margin: 10% auto;
+    }
 }
 
-/* PCs (1024px y superior) */
-@media screen and (min-width: 1024px) {
-    body {
-        font-size: 20px;
-    }
-
+@media screen and (max-width: 480px) {
     .product-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr;
     }
 }
-
-/* Ajustes adicionales para pantallas más grandes */
-@media screen and (min-width: 1440px) {
-    main {
-        max-width: 1200px;
-    }
-}
-
 
 #menu-toggle {
     display: none;
