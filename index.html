@@ -11,12 +11,8 @@
 <body>
     <header>
         <button id="menu-toggle" aria-label="Abrir menú">☰</button>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar...">
-            <button>Buscar</button>
-        </div>
-        <nav id="mobile-menu" class="mobile-menu">
-            <ul class="menu-options">
+        <nav class="desktop-menu">
+            <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="#discount">Discount</a></li>
@@ -25,8 +21,14 @@
                 <li><a href="#account">Account</a></li>
             </ul>
         </nav>
-        <nav class="desktop-menu">
-            <ul>
+        <nav id="mobile-menu" class="mobile-menu">
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button>Buscar</button>
+                </div>
+            </div>
+            <ul class="menu-options">
                 <li><a href="#about">About</a></li>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="#discount">Discount</a></li>
