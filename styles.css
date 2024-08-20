@@ -128,7 +128,7 @@ h2 {
     display: none;
     background: none;
     border: none;
-    font-size: 1.5em;
+    font-size: 1.8em; /* Aumento el tamaño del botón */
     cursor: pointer;
     color: #FFF5EE;
     position: absolute;
@@ -144,7 +144,7 @@ h2 {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #FFD1DC;
+    background-color: #FFD1DC; /* Agrega este color de fondo */
     transition: left 0.3s ease;
     z-index: 1000;
     overflow-y: auto;
@@ -162,7 +162,7 @@ h2 {
 }
 
 .mobile-menu li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: block;
 }
 
@@ -264,4 +264,46 @@ h2 {
     .product-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.menu-options {
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 60px; /* Aumento el margen superior a 60px */
+}
+
+.menu-options li {
+    margin-bottom: 15px;
+}
+
+.menu-options a {
+    color: #8B4B8B;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    background-color: #8B4B8B;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
 }
