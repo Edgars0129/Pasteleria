@@ -128,9 +128,9 @@ h2 {
     display: none;
     background: none;
     border: none;
-    font-size: 1.8em; /* Aumento el tamaño del botón */
+    font-size: 1.8em;
     cursor: pointer;
-    color: #FFF5EE;
+    color: black;
     position: absolute;
     top: 15px;
     left: 15px;
@@ -285,14 +285,13 @@ h2 {
 .search-bar {
     display: flex;
     align-items: center;
-    width: 90%;
-    max-width: 300px;
+    width: 80%;
+    max-width: 250px;
 }
 
 .search-bar-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -319,11 +318,11 @@ h2 {
 
 .mobile-menu .search-bar {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 90%;
-    max-width: 300px;
+    width: 80%;
+    max-width: 250px;
 }
+
 
 .mobile-menu .search-bar input {
     width: 100%;
@@ -331,17 +330,25 @@ h2 {
     margin-bottom: 10px;
 }
 
+.mobile-menu .search-bar button {
+    align-self: center;
+}
 
 .mobile-menu .search-bar-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.mobile-menu .search-bar button {
-    align-self: center;
+.search-bar button {
+    background-color: #8B4B8B;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .mobile-menu .menu-options {
