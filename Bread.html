@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aldenaire & Partners - Productos</title>
+    <title>Cake Shop - Catálogo de Productos</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
     <script src="functions.js" defer></script>
@@ -11,79 +11,59 @@
 <body>
     <header>
         <button id="menu-toggle" aria-label="Abrir menú">☰</button>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar...">
-            <button>Buscar</button>
-        </div>
-        <nav id="mobile-menu" class="mobile-menu">
-            <ul class="menu-options">
-                <li><a href="#about">About</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#discount">Discount</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#account">Account</a></li>
-            </ul>
-        </nav>
         <nav class="desktop-menu">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#discount">Discount</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#account">Account</a></li>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="Bread.html">Panadería</a></li>
+                <li><a >Repostería</a></li>
+                <li><a >Galletería</a></li>
+                <li><a >Contáctanos</a></li>
+                <li><a >Más Productos</a></li>
+            </ul>
+        </nav>
+        <nav id="mobile-menu" class="mobile-menu">
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button>Buscar</button>
+                </div>
+            </div>
+            <ul class="menu-options">
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="Bread.html">Panadería</a></li>
+                <li><a >Repostería</a></li>
+                <li><a >Galletería</a></li>
+                <li><a >Contáctanos</a></li>
+                <li><a >Más Productos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Aldenaire & Partners</h1>
-        <h2>Skincare Shop</h2>
-        <div class="product-grid">
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
+        <div class="hero">
+            <h1>Cake Shop</h1>
+            <h2>Catálogo de Productos</h2>
+            <button class="cta-button">Contáctanos</button>
+        </div>
+        <div class="content">
+            <div class="product-grid">
+                <div class="product-item" data-product-id="1">
+                    <img src="./img/pan.jpg" alt="Producto 1">
+                    <p>Pastel de Chocolate</p>
+                </div>
+                <div class="product-item" data-product-id="2">
+                    <img src="./img/pan.jpg" alt="Producto 2">
+                    <p>Cupcakes Glaseados</p>
+                </div>
+                <div class="product-item" data-product-id="3">
+                    <img src="./img/pan.jpg" alt="Producto 3">
+                    <p>Galletas Decoradas</p>
+                </div>
+                <div class="product-item" data-product-id="4">
+                    <img src="./img/pan.jpg" alt="Producto 4">
+                    <p>Donas Rellenas</p>
+                </div>
             </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
-            <div class="product-item" data-product-id="1">
-                <img src="./img/pan.jpg" alt="Producto 1">
-                <p>Producto 1</p>
-            </div>
+            <p class="description">Explora nuestra amplia selección de deliciosos postres, pasteles, galletas y mucho más. Nuestros productos son hechos con los mejores ingredientes y con mucho amor.</p>
         </div>
     </main>
 

@@ -4,12 +4,18 @@ body {
     color: #8B4B8B;
     margin: 0;
     padding: 0;
+    padding-top: 60px; /* Debe ser igual a la altura del header */
 }
 
 header {
     background-color: #B76E79;
     padding: 15px 0;
-    position: relative;
+    position: fixed; /* Cambia de relative a fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px; /* Ajusta este valor según tus necesidades */
+    z-index: 1000;
 }
 
 nav ul {
@@ -131,7 +137,7 @@ h2 {
     font-size: 1.8em;
     cursor: pointer;
     color: black;
-    position: absolute;
+    position: fixed; /* Cambia de absolute a fixed */
     top: 15px;
     left: 15px;
     z-index: 1001;
@@ -148,6 +154,8 @@ h2 {
     transition: left 0.3s ease;
     z-index: 1000;
     overflow-y: auto;
+    top: 60px; /* Debe ser igual a la altura del header */
+    height: calc(100% - 60px); /* Resta la altura del header */
 }
 
 .mobile-menu.active {
