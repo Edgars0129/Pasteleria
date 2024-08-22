@@ -241,12 +241,10 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-    .desktop-menu {
-        display: block;
-    }
-
-    #menu-toggle, .mobile-menu {
-        display: none;
+    .desktop-product-grid .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 }
 
